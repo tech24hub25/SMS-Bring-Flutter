@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mvvm_architecture_template/core/colors/app_colors.dart';
-import 'package:mvvm_architecture_template/core/styles/styles.dart';
+import 'package:sms_bring_flutter/core/colors/app_colors.dart';
+import 'package:sms_bring_flutter/core/styles/styles.dart';
 
 extension LightTheme on BuildContext {
   ThemeData get lightTheme => ThemeData(

@@ -14,20 +14,20 @@ import 'package:get_storage/get_storage.dart' as _i792;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:internet_connection_checker/internet_connection_checker.dart'
     as _i973;
-import 'package:mvvm_architecture_template/core/api/dio_client.dart' as _i527;
-import 'package:mvvm_architecture_template/core/api/dio_client_impl.dart'
+import 'package:sms_bring_flutter/core/api/dio_client.dart' as _i527;
+import 'package:sms_bring_flutter/core/api/dio_client_impl.dart'
     as _i342;
-import 'package:mvvm_architecture_template/core/configs/configuration.dart'
+import 'package:sms_bring_flutter/core/configs/configuration.dart'
     as _i1051;
-import 'package:mvvm_architecture_template/core/interceptors/internet_connection_interceptor.dart'
+import 'package:sms_bring_flutter/core/interceptors/internet_connection_interceptor.dart'
     as _i698;
-import 'package:mvvm_architecture_template/core/interceptors/logging_interceptor.dart'
+import 'package:sms_bring_flutter/core/interceptors/logging_interceptor.dart'
     as _i514;
-import 'package:mvvm_architecture_template/core/interceptors/token_interceptor.dart'
+import 'package:sms_bring_flutter/core/interceptors/token_interceptor.dart'
     as _i339;
-import 'package:mvvm_architecture_template/core/network_info/network_info.dart'
+import 'package:sms_bring_flutter/core/network_info/network_info.dart'
     as _i85;
-import 'package:mvvm_architecture_template/injectable_modules.dart' as _i947;
+import 'package:sms_bring_flutter/injectable_modules.dart' as _i947;
 
 const String _staging = 'staging';
 const String _dev = 'dev';

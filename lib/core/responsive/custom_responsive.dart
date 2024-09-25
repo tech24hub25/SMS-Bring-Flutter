@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mvvm_architecture_template/core/extensions/build_context_extension.dart';
+import 'package:sms_bring_flutter/core/extensions/build_context_extension.dart';
 
 class CustomResponsive extends StatelessWidget {
   final Widget desktop;
