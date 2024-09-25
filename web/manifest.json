@@ -1,0 +1,35 @@
+{
+    "name": "mvvm_architecture_template",
+    "short_name": "mvvm_architecture_template",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "This Flutter template is built with an MVVM architecture and includes core shared files for easy reuse across projects. It features basic setup with Splash and Home pages, using Cubit for state management. GetX is integrated for localization, responsive layout, and navigation. Additionally, Dio is configured with a token interceptor for handling network requests.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
