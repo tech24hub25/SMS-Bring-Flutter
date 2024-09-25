@@ -1,4 +1,4 @@
-name: mvvm_architecture_template
+name: sms_bring_flutter
 description: "This Flutter template is built with an MVVM architecture and includes core shared files for easy reuse across projects. It features basic setup with Splash and Home pages, using Cubit for state management. GetX is integrated for localization, responsive layout, and navigation. Additionally, Dio is configured with a token interceptor for handling network requests."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.

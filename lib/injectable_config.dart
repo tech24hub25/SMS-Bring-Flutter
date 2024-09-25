@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
-import 'package:mvvm_architecture_template/injectable_config.config.dart';
+import 'package:sms_bring_flutter/injectable_config.config.dart';
 
 final GetIt getIt = GetIt.instance;
 

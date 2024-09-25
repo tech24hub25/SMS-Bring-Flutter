@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
-import 'package:mvvm_architecture_template/core/network_info/network_info.dart';
+import 'package:sms_bring_flutter/core/network_info/network_info.dart';
 
 @LazySingleton()
 class InternetConnectionInterceptor extends Interceptor {

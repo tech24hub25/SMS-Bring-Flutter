@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart' as bloc;
 import 'package:get/get.dart';
 import 'package:injectable/injectable.dart';
-import 'package:mvvm_architecture_template/core/configs/simple_bloc_observer.dart';
-import 'package:mvvm_architecture_template/core/routes/app_routes.dart';
-import 'package:mvvm_architecture_template/core/translations/my_translations_config.dart';
-import 'package:mvvm_architecture_template/injectable_config.dart';
-import 'package:mvvm_architecture_template/theme/app_theme.dart';
+import 'package:sms_bring_flutter/core/configs/simple_bloc_observer.dart';
+import 'package:sms_bring_flutter/core/routes/app_routes.dart';
+import 'package:sms_bring_flutter/core/translations/my_translations_config.dart';
+import 'package:sms_bring_flutter/injectable_config.dart';
+import 'package:sms_bring_flutter/theme/app_theme.dart';
 
 void main() async {
   bloc.Bloc.observer = SimpleBlocObserver();

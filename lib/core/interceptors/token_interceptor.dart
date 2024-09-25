@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:injectable/injectable.dart';
-import 'package:mvvm_architecture_template/core/constants/storage_keys.dart';
+import 'package:sms_bring_flutter/core/constants/storage_keys.dart';
 
 @LazySingleton()
 class TokenInterceptor extends Interceptor {
