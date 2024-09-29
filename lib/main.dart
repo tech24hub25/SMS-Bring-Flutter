@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'MVVM Architecture Template',
+      title: 'SMS Bring',
       scrollBehavior: _MyCustomScrollBehavior(),
       enableLog: true,
       debugShowCheckedModeBanner: false,
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       routingCallback: (value) {},
       theme: context.lightTheme,
       onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: AppRoutes.splashRoute,
+      initialRoute: (kIsWeb) ? AppRoutes.registerRoute : AppRoutes.splashRoute,
     );
   }
 }
