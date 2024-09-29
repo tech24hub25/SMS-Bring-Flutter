@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:sms_bring_flutter/features/splash_feature/presentation/views/widgets/splash_view_body.dart';
 
 class MobileSplashView extends StatelessWidget {
   const MobileSplashView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return const SafeArea(
       child: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('mobile'.tr),
-              Text('splashView'.tr),
-            ],
-          ),
-        ),
+        body: SplashViewBody(),
       ),
     );
   }
