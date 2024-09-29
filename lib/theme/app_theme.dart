@@ -8,15 +8,27 @@ extension LightTheme on BuildContext {
           backgroundColor: AppColors.primaryBackgroundColor,
           elevation: 0,
         ),
-        inputDecorationTheme: const InputDecorationTheme(
-          hintStyle: TextStyle(
-            color: AppColors.primaryColor,
+        inputDecorationTheme: InputDecorationTheme(
+          hintStyle: const TextStyle(
+            color: AppColors.lightGrey,
+          ),
+          border: OutlineInputBorder(
+            borderSide: const BorderSide(
+              color: AppColors.primaryColor,
+            ),
+            borderRadius: BorderRadius.circular(20),
           ),
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.primaryColorLight),
+            borderSide: const BorderSide(
+              color: AppColors.primaryColorLight,
+            ),
+            borderRadius: BorderRadius.circular(20),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(color: AppColors.primaryColor),
+            borderSide: const BorderSide(
+              color: AppColors.primaryColor,
+            ),
+            borderRadius: BorderRadius.circular(20),
           ),
         ),
         useMaterial3: true,
@@ -45,7 +57,7 @@ extension LightTheme on BuildContext {
           labelSmall: Styles.labelSmall,
         ),
         iconTheme: const IconThemeData(
-          color: AppColors.primaryColor,
+          color: AppColors.gray,
           size: 24.0,
         ),
         popupMenuTheme: const PopupMenuThemeData(
