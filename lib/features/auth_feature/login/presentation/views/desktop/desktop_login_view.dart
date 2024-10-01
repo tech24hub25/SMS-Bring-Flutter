@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:get/utils.dart';
 import 'package:sms_bring_flutter/core/colors/app_colors.dart';
 import 'package:sms_bring_flutter/core/styles/styles.dart';
 import 'package:sms_bring_flutter/core/widgets/custom_shadow_container.dart';
+import 'package:sms_bring_flutter/features/auth_feature/login/presentation/views/widgets/login_form_section.dart';
 import 'package:sms_bring_flutter/features/auth_feature/widgets/custom_background_image.dart';
-import 'package:sms_bring_flutter/features/auth_feature/register/presentation/views/widgets/register_form_section.dart';
 import 'package:sms_bring_flutter/generated/assets.dart';
 
-class DesktopRegisterView extends StatefulWidget {
-  const DesktopRegisterView({super.key});
+class DesktopLoginView extends StatefulWidget {
+  const DesktopLoginView({super.key});
 
   @override
-  State<DesktopRegisterView> createState() => _DesktopRegisterViewState();
+  State<DesktopLoginView> createState() => _DesktopLoginViewState();
 }
 
-class _DesktopRegisterViewState extends State<DesktopRegisterView> {
+class _DesktopLoginViewState extends State<DesktopLoginView> {
+  bool isRememberMe = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,14 +39,14 @@ class _DesktopRegisterViewState extends State<DesktopRegisterView> {
                     height: 125,
                   ),
                   Text(
-                    'createAnAccount'.tr,
+                    'login'.tr,
                     style: Styles.displayMedium.copyWith(
                       color: AppColors.skyBlue,
                     ),
                   ),
 
-                  /// form register
-                  const RegisterFormSection(),
+                  /// form login
+                  const LoginFormSection(),
                 ],
               ),
             ),

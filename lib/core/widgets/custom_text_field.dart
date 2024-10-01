@@ -65,16 +65,18 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 widget.prefixIcon,
                 color: AppColors.gray,
               ),
-              suffixIcon: IconButton(
-                onPressed: () {
-                  isObscureText = !isObscureText;
-                  setState(() {});
-                },
-                icon: Icon(
-                  widget.suffixIcon,
-                  color: AppColors.gray,
-                ),
-              ),
+              suffixIcon: widget.suffixIcon != null
+                  ? IconButton(
+                      onPressed: () {
+                        isObscureText = !isObscureText;
+                        setState(() {});
+                      },
+                      icon: Icon(
+                        widget.suffixIcon,
+                        color: AppColors.gray,
+                      ),
+                    )
+                  : null,
               contentPadding: const EdgeInsets.symmetric(
                 vertical: 15.0,
                 horizontal: 10.0,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:sms_bring_flutter/features/auth_feature/login/presentation/views/login_responsive_view.dart';
 import 'package:sms_bring_flutter/features/auth_feature/register/presentation/views/register_responsive_view.dart';
 import 'package:sms_bring_flutter/features/main_feature/presentation/views/main_responsive_view.dart';
 import 'package:sms_bring_flutter/features/splash_feature/presentation/views/splash_responsive_view.dart';
@@ -7,6 +8,7 @@ import 'package:sms_bring_flutter/features/splash_feature/presentation/views/spl
 class AppRoutes {
   static const splashRoute = "/splashRoute";
   static const registerRoute = "/registerRoute";
+  static const loginRoute = "/loginRoute";
   static const mainRoute = "/main";
 }
 
@@ -22,6 +24,11 @@ class RouteGenerator {
         return GetPageRoute(
           routeName: AppRoutes.registerRoute,
           page: () => const RegisterResponsiveView(),
+        );
+      case AppRoutes.loginRoute:
+        return GetPageRoute(
+          routeName: AppRoutes.loginRoute,
+          page: () => const LoginResponsiveView(),
         );
       case AppRoutes.mainRoute:
         return GetPageRoute(

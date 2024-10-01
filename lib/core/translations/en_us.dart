@@ -15,4 +15,7 @@ const Map<String, String> enUS = {
   'iAgreeWithTermsAndConditions': 'I agree with terms and conditions',
   'doYouHaveAccountAlready': 'Do you have account already',
   'login': 'Login',
+  'rememberMe': 'Remember me',
+  'doNotHaveAnAccount': 'Don\'t have an account',
+  'forgetPassword': 'Forget password',
 };

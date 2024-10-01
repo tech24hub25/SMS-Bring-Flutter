@@ -5,12 +5,22 @@ import 'package:sms_bring_flutter/core/extensions/build_context_extension.dart';
 class CustomShadowContainer extends StatelessWidget {
   final double? width;
   final double? height;
+  final double? minWidth;
+  final double? maxWidth;
+  final double? minHeight;
+  final double? maxHeight;
   final Widget child;
+  final EdgeInsetsGeometry? padding;
   const CustomShadowContainer({
     super.key,
     required this.child,
     this.width,
     this.height,
+    this.padding,
+    this.minWidth,
+    this.maxWidth,
+    this.minHeight,
+    this.maxHeight,
   });
 
   @override
@@ -18,10 +28,13 @@ class CustomShadowContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      padding: const EdgeInsets.symmetric(
-        horizontal: 124,
-        vertical: 48,
+      constraints: BoxConstraints(
+        minWidth: minWidth ?? 0,
+        maxWidth: maxWidth ?? double.infinity,
+        minHeight: minHeight ?? 0,
+        maxHeight: maxHeight ?? double.infinity,
       ),
+      padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
         color: AppColors.primaryBackgroundColor,
