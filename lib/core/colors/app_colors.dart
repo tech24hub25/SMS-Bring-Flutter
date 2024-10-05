@@ -26,6 +26,7 @@ class AppColors {
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
   static const Color lightPurple = Color(0xff6F87DF);
+  static const Color periwinkle = Color(0xff8190C1);
 
   /// linear gradient colors group
   static const List<Color> primaryLinearGradientColors = [

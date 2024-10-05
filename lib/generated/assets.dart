@@ -11,6 +11,8 @@ class Assets {
   static const String svgFlagOfUnitedKingdom =
       'assets/svg/flag-of-united-kingdom.svg';
   static const String svgInternetApps = 'assets/svg/internet-apps.svg';
+  static const String svgLowerNipMessageClipper =
+      'assets/svg/lower-nip-message-clipper.svg';
   static const String svgSmsBringLogo = 'assets/svg/sms-bring-logo.svg';
   static const String svgSuccess = 'assets/svg/success.svg';
 }

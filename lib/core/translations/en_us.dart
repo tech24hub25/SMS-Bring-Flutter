@@ -24,4 +24,11 @@ const Map<String, String> enUS = {
   "russian": "Russian",
   'getNumbers': 'Get Numbers',
   'helpAndSupport': 'Help & Support',
+  'buyNow': 'Buy now',
+  'welcome': 'Welcome',
+  'toSmsBring': 'to SMS BRING',
+  'fastAndSecureTemporaryPhoneNumbersAvailable':
+      'Fast and secure temporary phone numbers available',
+  'acquireInstantSecureTemporaryPhoneNumbersAndPayUponReceivingAShortMessage':
+      'Acquire instant, secure temporary phone numbers and pay upon receiving a short message.',
 };
