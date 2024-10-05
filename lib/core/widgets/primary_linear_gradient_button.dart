@@ -9,6 +9,8 @@ class PrimaryLinearGradientButton extends StatelessWidget {
   final double? height;
   final double? borderWidth;
   final BorderRadiusGeometry? borderRadius;
+  final List<BoxShadow>? boxShadow;
+  final List<Color>? backgroundColor;
   const PrimaryLinearGradientButton({
     super.key,
     this.width = 200,
@@ -17,6 +19,8 @@ class PrimaryLinearGradientButton extends StatelessWidget {
     this.borderRadius = BorderRadius.zero,
     required this.text,
     this.onPressed,
+    this.boxShadow,
+    this.backgroundColor = AppColors.primaryLinearGradientColors,
   });
 
   @override
@@ -39,11 +43,12 @@ class PrimaryLinearGradientButton extends StatelessWidget {
         width: width,
         height: height,
         decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: AppColors.primaryLinearGradientColors,
+          gradient: LinearGradient(
+            colors: backgroundColor!,
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
           ),
+          boxShadow: boxShadow,
           borderRadius: borderRadius,
         ),
         child: ElevatedButton(
@@ -58,8 +63,8 @@ class PrimaryLinearGradientButton extends StatelessWidget {
           ),
           child: Ink(
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                colors: AppColors.primaryLinearGradientColors,
+              gradient: LinearGradient(
+                colors: backgroundColor!,
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
               ),

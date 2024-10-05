@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       routingCallback: (value) {},
       theme: context.lightTheme,
       onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: (kIsWeb) ? AppRoutes.registerRoute : AppRoutes.splashRoute,
+      initialRoute: (kIsWeb) ? AppRoutes.mainRoute : AppRoutes.splashRoute,
     );
   }
 }

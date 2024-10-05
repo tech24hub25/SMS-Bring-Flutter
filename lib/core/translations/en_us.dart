@@ -18,4 +18,10 @@ const Map<String, String> enUS = {
   'rememberMe': 'Remember me',
   'doNotHaveAnAccount': 'Don\'t have an account',
   'forgetPassword': 'Forget password',
+  'smsBring': 'SMS Bring',
+  'home': 'Home',
+  "english": "English",
+  "russian": "Russian",
+  'getNumbers': 'Get Numbers',
+  'helpAndSupport': 'Help & Support',
 };

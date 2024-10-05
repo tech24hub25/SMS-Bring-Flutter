@@ -7,7 +7,7 @@ class AppColors {
   static const Color primaryBackgroundColor = Color(0xFFfffaf3);
   static const Color secondaryBackgroundColor = Color(0xFFEAEAEA);
   static const Color primaryColorLight = Color(0xFFE9E9F0);
-  static const Color transparentBlackColor = Color(0x83000000);
+  static const Color transparentBlackColor = Color(0x99000000);
   static const Color gray = Color(0xFF878787);
 
   /// colors app
@@ -24,6 +24,8 @@ class AppColors {
   static const Color oceanBlue = Color(0xFF4385BA);
   static const Color deepBlue = Color(0xFF16467B);
   static const Color white = Color(0xFFFFFFFF);
+  static const Color black = Color(0xFF000000);
+  static const Color lightPurple = Color(0xff6F87DF);
 
   /// linear gradient colors group
   static const List<Color> primaryLinearGradientColors = [

@@ -7,6 +7,9 @@ class Assets {
   static const String imagesConfirmEmail = 'assets/images/confirm-email.png';
   static const String svgBackgroundRegisterLoginAccount =
       'assets/svg/background-register-login-account.svg';
+  static const String svgFlagOfRussia = 'assets/svg/flag-of-russia.svg';
+  static const String svgFlagOfUnitedKingdom =
+      'assets/svg/flag-of-united-kingdom.svg';
   static const String svgInternetApps = 'assets/svg/internet-apps.svg';
   static const String svgSmsBringLogo = 'assets/svg/sms-bring-logo.svg';
   static const String svgSuccess = 'assets/svg/success.svg';
