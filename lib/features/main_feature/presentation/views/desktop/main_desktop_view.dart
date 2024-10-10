@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sms_bring_flutter/core/widgets/custom_app_bar.dart';
+import 'package:sms_bring_flutter/core/widgets/custom_app_bar_desktop.dart';
 import 'package:sms_bring_flutter/features/main_feature/presentation/views/desktop/widgets/main_Desktop_body_view.dart';
 
 class MainDesktopView extends StatelessWidget {
@@ -11,7 +11,7 @@ class MainDesktopView extends StatelessWidget {
       child: Scaffold(
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(80.0),
-          child: CustomAppBar(),
+          child: CustomAppBarDesktop(),
         ),
         body: MainDesktopBodyView(),
       ),

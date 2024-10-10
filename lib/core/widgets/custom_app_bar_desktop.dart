@@ -9,16 +9,16 @@ import 'package:sms_bring_flutter/core/widgets/primary_linear_gradient_button.da
 import 'package:sms_bring_flutter/core/widgets/custom_select_language.dart';
 import 'package:sms_bring_flutter/generated/assets.dart';
 
-class CustomAppBar extends StatefulWidget {
-  const CustomAppBar({
+class CustomAppBarDesktop extends StatefulWidget {
+  const CustomAppBarDesktop({
     super.key,
   });
 
   @override
-  State<CustomAppBar> createState() => _CustomAppBarState();
+  State<CustomAppBarDesktop> createState() => _CustomAppBarDesktopState();
 }
 
-class _CustomAppBarState extends State<CustomAppBar> {
+class _CustomAppBarDesktopState extends State<CustomAppBarDesktop> {
   int _selectedButtonIndex = 1;
 
   void _onButtonPressed(int index) {
