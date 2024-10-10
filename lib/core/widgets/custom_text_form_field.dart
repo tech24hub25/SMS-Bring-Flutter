@@ -2,26 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:sms_bring_flutter/core/colors/app_colors.dart';
 import 'package:sms_bring_flutter/core/styles/styles.dart';
 
-class CustomTextField extends StatefulWidget {
+class CustomTextFormField extends StatefulWidget {
   final String title;
   final String hint;
   final IconData? prefixIcon;
   final IconData? suffixIcon;
   final bool obscureText;
-  const CustomTextField({
+  final TextEditingController controller;
+  final String? Function(String?)? validator;
+  final TextInputType? keyboardType;
+  final AutovalidateMode? autoValidateMode;
+
+  const CustomTextFormField({
     super.key,
     required this.title,
     required this.hint,
     this.prefixIcon,
     this.suffixIcon,
     this.obscureText = false,
+    required this.controller,
+    required this.validator,
+    this.keyboardType,
+    this.autoValidateMode,
   });
 
   @override
-  State<CustomTextField> createState() => _CustomTextFieldState();
+  State<CustomTextFormField> createState() => _CustomTextFormFieldState();
 }
 
-class _CustomTextFieldState extends State<CustomTextField> {
+class _CustomTextFormFieldState extends State<CustomTextFormField> {
   bool isObscureText = false;
   @override
   void initState() {
@@ -57,8 +66,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
               borderRadius: BorderRadius.circular(20),
             ),
           ),
-          child: TextField(
+          child: TextFormField(
+            controller: widget.controller,
             obscureText: isObscureText,
+            validator: widget.validator,
+            autovalidateMode: widget.autoValidateMode,
+            keyboardType: widget.keyboardType,
             decoration: InputDecoration(
               hintText: widget.hint,
               prefixIcon: Icon(
@@ -72,7 +85,9 @@ class _CustomTextFieldState extends State<CustomTextField> {
                         setState(() {});
                       },
                       icon: Icon(
-                        widget.suffixIcon,
+                        isObscureText
+                            ? Icons.visibility_off
+                            : widget.suffixIcon,
                         color: AppColors.gray,
                       ),
                     )
